@@ -1,6 +1,8 @@
 # NeuroVasc Workbench 0.1.0 release preparation
 
-Local checks completed 2026-09-28. **Prepared locally; GitHub publication and portfolio deployment are blocked, not completed.** The verified GitHub identity is `yramtirey`. No NeuroVasc remote/repository exists, GitHub CLI is unavailable, local Git has no stored HTTPS credential, and the connected GitHub tools cannot create a repository. No push or force-push was attempted.
+**Publication is complete.** See the [publication record](publication.md) for verified repository, portfolio and deployment links.
+
+The remainder of this report preserves the initial local-preparation results from 2026-09-28. At that stage repository creation and authenticated Git access were blocked. The user subsequently created the repository, authenticated Git became available, and both projects were published without a force-push.
 
 ## Changes and preservation
 
@@ -58,7 +60,7 @@ Provenance copy identifies TopCoW annotations derived from IXI MRA, states that 
 
 **No GitHub source URL has been inserted:** `repositoryUrl` remains null until a public source repository exists and its push is verified. Source/Data Sources/methods links are intentionally pending, so this portfolio draft must not be deployed yet. There is no fabricated live-demo link. Existing deployment configuration and site visual identity are preserved.
 
-## Remaining publication steps
+## Original publication handoff (subsequently completed)
 
 1. Authenticate GitHub CLI for the verified account (or create the empty public `NeuroVasc-Workbench` repository through GitHub and provide its confirmed URL).
 2. Create/push the audited source repository on `main`, with commit message `Release NeuroVasc Workbench v0.1.0`. Verify files, rendered docs, images and absence of raw data.

@@ -10,6 +10,8 @@ NeuroVasc turns labeled cerebral vascular segmentations into an interactive work
 
 ## Demo
 
+[Project overview on my portfolio](https://yramtirey.github.io/projects/neurovasc-workbench/). The portfolio shows actual captures; the interactive workbench runs locally.
+
 Run the workbench locally with an independently obtained annotated segmentation, using the steps below. There is no hosted live demo. The captures below are from the running application using the attributed TopCoW/IXI example. See [image attribution and license](assets/README.md).
 
 ![NeuroVasc dashboard with named vessels and caliber profile](assets/neurovasc-dashboard.png)

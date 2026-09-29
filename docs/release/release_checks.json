@@ -168,5 +168,14 @@
     "pytest": "9.1.1",
     "fastapi": "0.141.1"
   },
-  "publication": "blocked; not pushed"
+  "publication": {
+    "status": "published",
+    "repository": "https://github.com/yramtirey/NeuroVasc-Workbench",
+    "release_commit": "72638a321e7ded849cb416c1c324046b921e60fe",
+    "branch": "main",
+    "portfolio_commit": "2d1be2f39ab30c612c71cdfa0500edb692e90587",
+    "portfolio_url": "https://yramtirey.github.io/projects/neurovasc-workbench/",
+    "deployment_run": "https://github.com/yramtirey/yramtirey.github.io/actions/runs/36519124836",
+    "deployment_conclusion": "success"
+  }
 }
