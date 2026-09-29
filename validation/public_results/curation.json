@@ -1,0 +1,212 @@
+[
+  {
+    "source": "validation/outputs/caliber_v1/figures/absolute_error_vs_true.png",
+    "public": "validation/public_results/caliber_v1/figures/absolute_error_vs_true.png",
+    "source_sha256": "8d518e1c5ddcf86dd5bbe413e2dee5bcbbca308611427ce53fc2e840ce94691f",
+    "public_sha256": "8d518e1c5ddcf86dd5bbe413e2dee5bcbbca308611427ce53fc2e840ce94691f",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v1/figures/estimated_vs_true.png",
+    "public": "validation/public_results/caliber_v1/figures/estimated_vs_true.png",
+    "source_sha256": "fd1af6e6b85bde8726110bfc9509494003c17bd73ec5dbf0b3a5718a8bfffa91",
+    "public_sha256": "fd1af6e6b85bde8726110bfc9509494003c17bd73ec5dbf0b3a5718a8bfffa91",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v1/results.csv",
+    "public": "validation/public_results/caliber_v1/results.csv",
+    "source_sha256": "71cffc98cef8e22d113848261c630f729bb96fe4da99aa46b9dec504ba7c0513",
+    "public_sha256": "71cffc98cef8e22d113848261c630f729bb96fe4da99aa46b9dec504ba7c0513",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v1/summary.json",
+    "public": "validation/public_results/caliber_v1/summary.json",
+    "source_sha256": "878b72bcca2ee3a0e60fe9b72d48d774a77562e46cd7c84189c8fc92b2f0494b",
+    "public_sha256": "878b72bcca2ee3a0e60fe9b72d48d774a77562e46cd7c84189c8fc92b2f0494b",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v2/figures/cross_sectional_vs_true.png",
+    "public": "validation/public_results/caliber_v2/figures/cross_sectional_vs_true.png",
+    "source_sha256": "12392cb8bab71c19243f3400905729d9ca8861156b7c781e6bc62c5a87c69ac6",
+    "public_sha256": "12392cb8bab71c19243f3400905729d9ca8861156b7c781e6bc62c5a87c69ac6",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v2/figures/grid_phase_sensitivity.png",
+    "public": "validation/public_results/caliber_v2/figures/grid_phase_sensitivity.png",
+    "source_sha256": "bd04ad15e0cab837526c65db4a08fdedc385ca263160f7a9b0797af41624dbd3",
+    "public_sha256": "bd04ad15e0cab837526c65db4a08fdedc385ca263160f7a9b0797af41624dbd3",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v2/matched_comparison.csv",
+    "public": "validation/public_results/caliber_v2/matched_comparison.csv",
+    "source_sha256": "399a1e7337201049575a0d6c99386892d1ddec0c8b178bb036402ea2e03b163d",
+    "public_sha256": "399a1e7337201049575a0d6c99386892d1ddec0c8b178bb036402ea2e03b163d",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v2/results.csv",
+    "public": "validation/public_results/caliber_v2/results.csv",
+    "source_sha256": "2150534df048afcb9a0b9bcf4939bc9dad04d31ec49a6c287c58acf9336853c2",
+    "public_sha256": "2150534df048afcb9a0b9bcf4939bc9dad04d31ec49a6c287c58acf9336853c2",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/caliber_v2/summary.json",
+    "public": "validation/public_results/caliber_v2/summary.json",
+    "source_sha256": "9cd5efbf9668bf2d858672681a9e2846e2d2471fff8c0d702cf26e9b8760f9d3",
+    "public_sha256": "9cd5efbf9668bf2d858672681a9e2846e2d2471fff8c0d702cf26e9b8760f9d3",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v1/figures/E_length.png",
+    "public": "validation/public_results/centerline_v1/figures/E_length.png",
+    "source_sha256": "6c69df230d7747cd70a253e29f8281f203d89a01e38cb149ef7931803b393a71",
+    "public_sha256": "6c69df230d7747cd70a253e29f8281f203d89a01e38cb149ef7931803b393a71",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v1/figures/G_coverage.png",
+    "public": "validation/public_results/centerline_v1/figures/G_coverage.png",
+    "source_sha256": "842534a528a42918f93106eb0da472bc79366c4f8e0dab99f7f368756ac87b32",
+    "public_sha256": "842534a528a42918f93106eb0da472bc79366c4f8e0dab99f7f368756ac87b32",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v1/results.csv",
+    "public": "validation/public_results/centerline_v1/results.csv",
+    "source_sha256": "f2555488ffa18d667fd131fcadd05c0d9b21f4c6c6b33bb6fb4035374ffb16d9",
+    "public_sha256": "f2555488ffa18d667fd131fcadd05c0d9b21f4c6c6b33bb6fb4035374ffb16d9",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v1/summary.json",
+    "public": "validation/public_results/centerline_v1/summary.json",
+    "source_sha256": "bbc92f8bf366b0f2db4aa39b155901802a8f4586f1deb559fadbc14a6a488b0c",
+    "public_sha256": "bbc92f8bf366b0f2db4aa39b155901802a8f4586f1deb559fadbc14a6a488b0c",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v2/figures/B_qc.png",
+    "public": "validation/public_results/centerline_v2/figures/B_qc.png",
+    "source_sha256": "d42b13c05730edde4ca24941e39b1234379e84ccd2ef6827d16081747fe5db49",
+    "public_sha256": "d42b13c05730edde4ca24941e39b1234379e84ccd2ef6827d16081747fe5db49",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v2/figures/H_raw_refined_tangent.png",
+    "public": "validation/public_results/centerline_v2/figures/H_raw_refined_tangent.png",
+    "source_sha256": "524ce8c45b731c5321ed600fcd76e362eae69a27ad16297e607dbf432a6adbfa",
+    "public_sha256": "524ce8c45b731c5321ed600fcd76e362eae69a27ad16297e607dbf432a6adbfa",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v2/results.csv",
+    "public": "validation/public_results/centerline_v2/results.csv",
+    "source_sha256": "b417b269073bb02c010923c090566f1e0e1eb948016109ba617ba54bc80e3c2e",
+    "public_sha256": "b417b269073bb02c010923c090566f1e0e1eb948016109ba617ba54bc80e3c2e",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/centerline_v2/summary.json",
+    "public": "validation/public_results/centerline_v2/summary.json",
+    "source_sha256": "9dc1f593fb149a96a48514ba881828546ac1fa0aabc4ba8d03adf8edd62c324d",
+    "public_sha256": "9dc1f593fb149a96a48514ba881828546ac1fa0aabc4ba8d03adf8edd62c324d",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/external_methods_v1/figures/01_position.png",
+    "public": "validation/public_results/external_methods_v1/figures/01_position.png",
+    "source_sha256": "ac19890aafdd846e111aa10223037b8530a47d1bb67332820b710c37a34766a0",
+    "public_sha256": "ac19890aafdd846e111aa10223037b8530a47d1bb67332820b710c37a34766a0",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/external_methods_v1/figures/02_coverage.png",
+    "public": "validation/public_results/external_methods_v1/figures/02_coverage.png",
+    "source_sha256": "245baccafebeb030c0b8823d322e6ed559882eb11bdf21c573418572a8bdaf66",
+    "public_sha256": "245baccafebeb030c0b8823d322e6ed559882eb11bdf21c573418572a8bdaf66",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/external_methods_v1/figures/05_diameter.png",
+    "public": "validation/public_results/external_methods_v1/figures/05_diameter.png",
+    "source_sha256": "49fbfc5173e5d6da61e281dbf3a40c0c5d73d433f92a9dbecc4c3d5a567321fc",
+    "public_sha256": "49fbfc5173e5d6da61e281dbf3a40c0c5d73d433f92a9dbecc4c3d5a567321fc",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/external_methods_v1/results.csv",
+    "public": "validation/public_results/external_methods_v1/results.csv",
+    "source_sha256": "43f824ae47d403c70d9e908126fff5732f880ac969b964764714f63c03f6c408",
+    "public_sha256": "43f824ae47d403c70d9e908126fff5732f880ac969b964764714f63c03f6c408",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/external_methods_v1/summary.json",
+    "public": "validation/public_results/external_methods_v1/summary.json",
+    "source_sha256": "4f441fde414988a56234b7ce9005d5a6ea664918467ee47cfa96bc3e7f639b94",
+    "public_sha256": "a02ee0fc63010c91d9223ca0c6049fa85e2c3430cafd7712f325c3ef49b0cad6",
+    "transformation": "local/upstream build paths generalized; numeric values unchanged"
+  },
+  {
+    "source": "validation/outputs/topology_v1/figures/E_connectivity.png",
+    "public": "validation/public_results/topology_v1/figures/E_connectivity.png",
+    "source_sha256": "45318ed1c7513a98847e5ce8a4d4b0e6f6ce20533f9065eb0941cc650d280f70",
+    "public_sha256": "45318ed1c7513a98847e5ce8a4d4b0e6f6ce20533f9065eb0941cc650d280f70",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v1/figures/H_length.png",
+    "public": "validation/public_results/topology_v1/figures/H_length.png",
+    "source_sha256": "c95e25d6198bb6ab2c921155b276ec8fd713a12ecc8e0d3e6521a194ece4dec5",
+    "public_sha256": "c95e25d6198bb6ab2c921155b276ec8fd713a12ecc8e0d3e6521a194ece4dec5",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v1/results.csv",
+    "public": "validation/public_results/topology_v1/results.csv",
+    "source_sha256": "1c09f98c51d8cae52da6c73d9cc4557b04303e6d28d1a04c8f91ed9a97045b82",
+    "public_sha256": "1c09f98c51d8cae52da6c73d9cc4557b04303e6d28d1a04c8f91ed9a97045b82",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v1/summary.json",
+    "public": "validation/public_results/topology_v1/summary.json",
+    "source_sha256": "9a636ed1c93983845913d58895720faac70022741a259ad93b250ca2a808a94e",
+    "public_sha256": "9a636ed1c93983845913d58895720faac70022741a259ad93b250ca2a808a94e",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v2/figures/D_branch_F1.png",
+    "public": "validation/public_results/topology_v2/figures/D_branch_F1.png",
+    "source_sha256": "62d421fc3d01b2253d9a34e9398bb1ac2aa791510d78a79553d6a22b3da7065d",
+    "public_sha256": "62d421fc3d01b2253d9a34e9398bb1ac2aa791510d78a79553d6a22b3da7065d",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v2/figures/G_junction_error_mm.png",
+    "public": "validation/public_results/topology_v2/figures/G_junction_error_mm.png",
+    "source_sha256": "7201d5186b5749b1828c9bf102197a77bff9628a11bdf0ba389bd2b210def9b4",
+    "public_sha256": "7201d5186b5749b1828c9bf102197a77bff9628a11bdf0ba389bd2b210def9b4",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v2/results.csv",
+    "public": "validation/public_results/topology_v2/results.csv",
+    "source_sha256": "e4637f20446ecebf465c8c52eb23a3b9db5648f83a8452436bdd9c4f86db67e8",
+    "public_sha256": "e4637f20446ecebf465c8c52eb23a3b9db5648f83a8452436bdd9c4f86db67e8",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "validation/outputs/topology_v2/summary.json",
+    "public": "validation/public_results/topology_v2/summary.json",
+    "source_sha256": "be3de1262039aa44b4921dce0a778320f25b97d54c809986c32924624fbac5f9",
+    "public_sha256": "be3de1262039aa44b4921dce0a778320f25b97d54c809986c32924624fbac5f9",
+    "transformation": "byte-identical copy"
+  }
+]

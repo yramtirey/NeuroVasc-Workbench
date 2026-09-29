@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurovasc-workbench"
+version = "0.1.0"
+description = "Computational workbench for neurovascular imaging analysis"
+requires-python = ">=3.14"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "numpy",
+    "scipy",
+    "nibabel",
+    "scikit-image",
+    "networkx",
+    "pyvista",
+    "vtk",
+    "matplotlib",
+    "pandas",
+]
+
+[tool.setuptools.packages.find]
+include = ["neurovasc*"]
+
+[project.optional-dependencies]
+validation = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

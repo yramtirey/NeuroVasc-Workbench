@@ -1,0 +1,482 @@
+{
+  "version": "caliber_v2",
+  "geometry_count": 58,
+  "experiment_count": 116,
+  "estimator_run_count": 232,
+  "matched_experiment_count": 92,
+  "shared_centerline_failure_geometry_count": 12,
+  "edt": {
+    "overall_mae": 0.22995523678397548,
+    "overall_rmse": 0.303407511825865,
+    "bias": -0.03911650466172275,
+    "isotropic_mae": 0.2141966892119177,
+    "anisotropic_mae": 0.24714637958985666,
+    "valid_fraction": 1.0,
+    "attempted_samples": 3649,
+    "valid_samples": 3649,
+    "invalid_samples": 0,
+    "runs": 116,
+    "scorable_runs": 92,
+    "upstream_failed_runs": 24
+  },
+  "cross_sectional": {
+    "overall_mae": 0.08026760118639303,
+    "overall_rmse": 0.10297347497908232,
+    "bias": -0.02146087991841276,
+    "isotropic_mae": 0.08198932039885794,
+    "anisotropic_mae": 0.07838936204552219,
+    "valid_fraction": 1.0,
+    "attempted_samples": 3649,
+    "valid_samples": 3649,
+    "invalid_samples": 0,
+    "runs": 116,
+    "scorable_runs": 92,
+    "upstream_failed_runs": 24
+  },
+  "core_v1_phantoms": {
+    "edt": {
+      "overall_mae": 0.20128289197897922,
+      "overall_rmse": 0.25209677787341356,
+      "bias": 0.09329852527027303,
+      "isotropic_mae": 0.19077101494444587,
+      "anisotropic_mae": 0.21179476901351257,
+      "valid_fraction": 1.0,
+      "attempted_samples": 2015,
+      "valid_samples": 2015,
+      "invalid_samples": 0,
+      "runs": 52,
+      "scorable_runs": 52,
+      "upstream_failed_runs": 0
+    },
+    "cross_sectional": {
+      "overall_mae": 0.09938658470129164,
+      "overall_rmse": 0.12185200548518306,
+      "bias": -0.01075122339210959,
+      "isotropic_mae": 0.10669035296529887,
+      "anisotropic_mae": 0.09208281643728441,
+      "valid_fraction": 1.0,
+      "attempted_samples": 2015,
+      "valid_samples": 2015,
+      "invalid_samples": 0,
+      "runs": 52,
+      "scorable_runs": 52,
+      "upstream_failed_runs": 0
+    }
+  },
+  "by_trim": {
+    "0.0": {
+      "edt": {
+        "overall_mae": 0.23112524408116022,
+        "overall_rmse": 0.30655528164439433,
+        "bias": -0.04131845474734962,
+        "isotropic_mae": 0.21629717089769493,
+        "anisotropic_mae": 0.24730132391766785,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1977,
+        "valid_samples": 1977,
+        "invalid_samples": 0,
+        "runs": 58,
+        "scorable_runs": 46,
+        "upstream_failed_runs": 12
+      },
+      "cross_sectional": {
+        "overall_mae": 0.08022492208657836,
+        "overall_rmse": 0.10283357462982297,
+        "bias": -0.0218986168354806,
+        "isotropic_mae": 0.08192851764713323,
+        "anisotropic_mae": 0.07836645420233669,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1977,
+        "valid_samples": 1977,
+        "invalid_samples": 0,
+        "runs": 58,
+        "scorable_runs": 46,
+        "upstream_failed_runs": 12
+      }
+    },
+    "2.0": {
+      "edt": {
+        "overall_mae": 0.2287852294867907,
+        "overall_rmse": 0.3002267405822654,
+        "bias": -0.03691455457609588,
+        "isotropic_mae": 0.21209620752614042,
+        "anisotropic_mae": 0.2469914352620455,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1672,
+        "valid_samples": 1672,
+        "invalid_samples": 0,
+        "runs": 58,
+        "scorable_runs": 46,
+        "upstream_failed_runs": 12
+      },
+      "cross_sectional": {
+        "overall_mae": 0.0803102802862077,
+        "overall_rmse": 0.10311318551663513,
+        "bias": -0.021023143001344925,
+        "isotropic_mae": 0.08205012315058269,
+        "anisotropic_mae": 0.0784122698887077,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1672,
+        "valid_samples": 1672,
+        "invalid_samples": 0,
+        "runs": 58,
+        "scorable_runs": 46,
+        "upstream_failed_runs": 12
+      }
+    }
+  },
+  "by_geometry": {
+    "straight": {
+      "edt": {
+        "overall_mae": 0.21250096605253044,
+        "overall_rmse": 0.3040074024380988,
+        "bias": 0.016019961501494588,
+        "isotropic_mae": 0.18491589808140155,
+        "anisotropic_mae": 0.24698230101644153,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1556,
+        "valid_samples": 1556,
+        "invalid_samples": 0,
+        "runs": 60,
+        "scorable_runs": 36,
+        "upstream_failed_runs": 24
+      },
+      "cross_sectional": {
+        "overall_mae": 0.07539042581115703,
+        "overall_rmse": 0.0972957847329854,
+        "bias": 0.009281422887214593,
+        "isotropic_mae": 0.05516287759128621,
+        "anisotropic_mae": 0.10067486108599556,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1556,
+        "valid_samples": 1556,
+        "invalid_samples": 0,
+        "runs": 60,
+        "scorable_runs": 36,
+        "upstream_failed_runs": 24
+      }
+    },
+    "oblique": {
+      "edt": {
+        "overall_mae": 0.283495212180929,
+        "overall_rmse": 0.33597524699767656,
+        "bias": -0.12945623790440894,
+        "isotropic_mae": 0.2817986729339118,
+        "anisotropic_mae": 0.28519175142794606,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1279,
+        "valid_samples": 1279,
+        "invalid_samples": 0,
+        "runs": 36,
+        "scorable_runs": 36,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.06860795171382539,
+        "overall_rmse": 0.08815306622756998,
+        "bias": -0.03396047767382479,
+        "isotropic_mae": 0.08117394298239373,
+        "anisotropic_mae": 0.05604196044525706,
+        "valid_fraction": 1.0,
+        "attempted_samples": 1279,
+        "valid_samples": 1279,
+        "invalid_samples": 0,
+        "runs": 36,
+        "scorable_runs": 36,
+        "upstream_failed_runs": 0
+      }
+    },
+    "curved": {
+      "edt": {
+        "overall_mae": 0.14583339030256984,
+        "overall_rmse": 0.22627372053238626,
+        "bias": -0.08597481909421734,
+        "isotropic_mae": 0.11045632849511439,
+        "anisotropic_mae": 0.1812104521100253,
+        "valid_fraction": 1.0,
+        "attempted_samples": 474,
+        "valid_samples": 474,
+        "invalid_samples": 0,
+        "runs": 12,
+        "scorable_runs": 12,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.09864552802101052,
+        "overall_rmse": 0.12107026571708607,
+        "bias": -0.058893099580748155,
+        "isotropic_mae": 0.1425276820396622,
+        "anisotropic_mae": 0.05476337400235882,
+        "valid_fraction": 1.0,
+        "attempted_samples": 474,
+        "valid_samples": 474,
+        "invalid_samples": 0,
+        "runs": 12,
+        "scorable_runs": 12,
+        "upstream_failed_runs": 0
+      }
+    },
+    "tapered": {
+      "edt": {
+        "overall_mae": 0.1937523355112955,
+        "overall_rmse": 0.24082413037613246,
+        "bias": 0.18958566884462885,
+        "isotropic_mae": 0.2120022591907294,
+        "anisotropic_mae": 0.17550241183186163,
+        "valid_fraction": 1.0,
+        "attempted_samples": 340,
+        "valid_samples": 340,
+        "invalid_samples": 0,
+        "runs": 8,
+        "scorable_runs": 8,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.12711642274958312,
+        "overall_rmse": 0.1496168733826026,
+        "bias": -0.04740472315087862,
+        "isotropic_mae": 0.12898319034959937,
+        "anisotropic_mae": 0.12524965514956687,
+        "valid_fraction": 1.0,
+        "attempted_samples": 340,
+        "valid_samples": 340,
+        "invalid_samples": 0,
+        "runs": 8,
+        "scorable_runs": 8,
+        "upstream_failed_runs": 0
+      }
+    }
+  },
+  "by_geometry_core": {
+    "straight": {
+      "edt": {
+        "overall_mae": 0.20924140258171658,
+        "overall_rmse": 0.24671304847370346,
+        "bias": 0.2020962670155284,
+        "isotropic_mae": 0.2097702593876288,
+        "anisotropic_mae": 0.20871254577580442,
+        "valid_fraction": 1.0,
+        "attempted_samples": 842,
+        "valid_samples": 842,
+        "invalid_samples": 0,
+        "runs": 20,
+        "scorable_runs": 20,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.09326944617695947,
+        "overall_rmse": 0.11462576991876408,
+        "bias": 0.04721686653629243,
+        "isotropic_mae": 0.06938957473933297,
+        "anisotropic_mae": 0.117149317614586,
+        "valid_fraction": 1.0,
+        "attempted_samples": 842,
+        "valid_samples": 842,
+        "invalid_samples": 0,
+        "runs": 20,
+        "scorable_runs": 20,
+        "upstream_failed_runs": 0
+      }
+    },
+    "oblique": {
+      "edt": {
+        "overall_mae": 0.2484885802959487,
+        "overall_rmse": 0.289975663113624,
+        "bias": 0.0270508710097672,
+        "isotropic_mae": 0.22526613115761673,
+        "anisotropic_mae": 0.27171102943428077,
+        "valid_fraction": 1.0,
+        "attempted_samples": 359,
+        "valid_samples": 359,
+        "invalid_samples": 0,
+        "runs": 12,
+        "scorable_runs": 12,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.09183631355659876,
+        "overall_rmse": 0.11340644478828932,
+        "bias": -0.03478716391162835,
+        "isotropic_mae": 0.11815909601134507,
+        "anisotropic_mae": 0.06551353110185243,
+        "valid_fraction": 1.0,
+        "attempted_samples": 359,
+        "valid_samples": 359,
+        "invalid_samples": 0,
+        "runs": 12,
+        "scorable_runs": 12,
+        "upstream_failed_runs": 0
+      }
+    },
+    "curved": {
+      "edt": {
+        "overall_mae": 0.14583339030256984,
+        "overall_rmse": 0.22627372053238626,
+        "bias": -0.08597481909421734,
+        "isotropic_mae": 0.11045632849511439,
+        "anisotropic_mae": 0.1812104521100253,
+        "valid_fraction": 1.0,
+        "attempted_samples": 474,
+        "valid_samples": 474,
+        "invalid_samples": 0,
+        "runs": 12,
+        "scorable_runs": 12,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.09864552802101052,
+        "overall_rmse": 0.12107026571708607,
+        "bias": -0.058893099580748155,
+        "isotropic_mae": 0.1425276820396622,
+        "anisotropic_mae": 0.05476337400235882,
+        "valid_fraction": 1.0,
+        "attempted_samples": 474,
+        "valid_samples": 474,
+        "invalid_samples": 0,
+        "runs": 12,
+        "scorable_runs": 12,
+        "upstream_failed_runs": 0
+      }
+    },
+    "tapered": {
+      "edt": {
+        "overall_mae": 0.1937523355112955,
+        "overall_rmse": 0.24082413037613246,
+        "bias": 0.18958566884462885,
+        "isotropic_mae": 0.2120022591907294,
+        "anisotropic_mae": 0.17550241183186163,
+        "valid_fraction": 1.0,
+        "attempted_samples": 340,
+        "valid_samples": 340,
+        "invalid_samples": 0,
+        "runs": 8,
+        "scorable_runs": 8,
+        "upstream_failed_runs": 0
+      },
+      "cross_sectional": {
+        "overall_mae": 0.12711642274958312,
+        "overall_rmse": 0.1496168733826026,
+        "bias": -0.04740472315087862,
+        "isotropic_mae": 0.12898319034959937,
+        "anisotropic_mae": 0.12524965514956687,
+        "valid_fraction": 1.0,
+        "attempted_samples": 340,
+        "valid_samples": 340,
+        "invalid_samples": 0,
+        "runs": 8,
+        "scorable_runs": 8,
+        "upstream_failed_runs": 0
+      }
+    }
+  },
+  "comparison": {
+    "mae_delta": -0.1496876355975824,
+    "rmse_delta": -0.20043403684678268,
+    "edt_wins": 8,
+    "cross_sectional_wins": 78,
+    "ties": 6,
+    "unscorable_pairs": 24,
+    "tie_tolerance_mm": 0.01,
+    "best_geometry_for_cross_sectional": "oblique",
+    "worst_geometry_for_cross_sectional": "curved",
+    "mean_mae_delta_by_geometry": {
+      "curved": -0.047187862281559335,
+      "oblique": -0.2148872604671036,
+      "straight": -0.1371105402413734,
+      "tapered": -0.06663591276171238
+    },
+    "worst_cross_sectional_percent_error": 19.6826841204298,
+    "worst_cross_sectional_run": {
+      "experiment_id": "01_straight_1_centered_z_z0.5",
+      "cohort": "core",
+      "geometry": "straight",
+      "spacing_x_mm": 0.5,
+      "spacing_y_mm": 0.5,
+      "spacing_z_mm": 0.5,
+      "phase_id": "centered",
+      "orientation_id": "z",
+      "true_diameter_mm": 1,
+      "proximal_diameter_mm": 1,
+      "distal_diameter_mm": 1,
+      "trim_mm": 0.0,
+      "estimator_name": "cross_sectional",
+      "estimated_mean_mm": 1.196826841204298,
+      "estimated_median_mm": 1.196826841204298,
+      "estimated_min_mm": 1.196826841204298,
+      "estimated_max_mm": 1.196826841204298,
+      "mae_mm": 0.19682684120429803,
+      "rmse_mm": 0.19682684120429794,
+      "max_absolute_error_mm": 0.19682684120429794,
+      "absolute_error_mm": 0.19682684120429803,
+      "signed_bias_mm": 0.19682684120429803,
+      "percent_error": 19.6826841204298,
+      "signed_percent_error": 19.6826841204298,
+      "correlation": null,
+      "sample_count": 61,
+      "valid_sample_count": 61,
+      "invalid_sample_count": 0,
+      "valid_fraction": 1.0,
+      "status": "ok",
+      "failure_reason": "",
+      "trim_applied": false,
+      "samples_removed": 0
+    }
+  },
+  "cross_section_failure_reasons": {},
+  "parameters": {
+    "tangent_window_mm": 6.0,
+    "contour_merge_tolerance_mm": 1e-06,
+    "trim_mm": [
+      0,
+      2
+    ],
+    "partial_volume_experiment": false
+  },
+  "runtime": {
+    "python": "3.14.6",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-image": "0.26.0",
+      "networkx": "3.7",
+      "nibabel": "5.4.2",
+      "matplotlib": "3.11.2",
+      "pyvista": "0.49.0",
+      "vtk": "9.7.0"
+    }
+  },
+  "source_sha256": {
+    "neurovasc/geometry/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurovasc/geometry/caliber.py": "dfe24d1cd4ed9e46f91e0080600b655176a02c91337bd3275ebb7527ed103772",
+    "neurovasc/geometry/centerline.py": "d9226dc360925607d1f961653a0f620ecebb3827b4ebfde47e9df7403dbb1fbb",
+    "neurovasc/geometry/cross_sectional_caliber.py": "3c54223a84eb2659a88660707fa38996bf5af728304d2574754a80b307bd12ff",
+    "neurovasc/geometry/diameter_profile.py": "bd162690fcc3b9e1e44a9a01bfbe014d7c07abec5c55e62e0cc38d9e8ae4c285",
+    "neurovasc/geometry/main_path.py": "4f02139f9531bf2af2141d4f36264a3c32fcafbc999be9941a9690e962b1ae4b",
+    "neurovasc/geometry/mesh.py": "5342921890b5ad6cb0b16e8893d6898abc864eca57cf26f760f86390c86c028b",
+    "neurovasc/geometry/profile_analysis.py": "dd042ea0804f5fbcc13e0016b4667a9cd348b24773acaa2f7ecf995bcc25ddd3",
+    "neurovasc/graph/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurovasc/graph/branch_graph.py": "e1f6c296deb3a67e4ddb648e045cd8dd4de964dd4ed374d46cc33c48c02c70a2",
+    "neurovasc/graph/metrics.py": "e47970eacf4655096d20b269e7d5e88990ba148309982c020f961c9a4258ad63",
+    "neurovasc/graph/vascular_graph.py": "b84da7f02f485edbb58f706b4c265b6fd8d50ebc3316265642ae0eff27da3124",
+    "neurovasc/io/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurovasc/io/volume.py": "51a1fab9741440eb57e1a11dbc17f556db0a8c2f1d1593f8afd88482ef8c5673",
+    "validation/synthetic_caliber/__init__.py": "bad3559a8495b20858fab0155f529eb9e1cd95cd2d76c8cd209ff51c1128056f",
+    "validation/synthetic_caliber/comparison_v2.py": "eb13a415ac99c815e0105b135d55e490b08a552eff56b37ad19bcd3ef00bc4f6",
+    "validation/synthetic_caliber/evaluate.py": "8ab3a36a94f62a2127cd7cedcc1f61d272c5db816c36349b684efeedba6d2224",
+    "validation/synthetic_caliber/experiments_v2.py": "db21ee914e2eba3378c0b93bf2da9ae56c2fae8f1c9868a845af81d1c70d14b2",
+    "validation/synthetic_caliber/figures_v2.py": "a6572782ec2fe0e69cbe8dad9e9f26638f1734388ef0a6519c5648faa6e52ef3",
+    "validation/synthetic_caliber/geometries.py": "c380a236789822943ee902f246b2bb5dfd6ad2eca24ff9e2676a24cdd34a4f17",
+    "validation/synthetic_caliber/metrics.py": "f5aaef9e41037acc0363322c48614a11f4eac165c6242214a7119d4e6e172d1b",
+    "scripts/run_caliber_validation.py": "4a53f87415596a8e87e471958e0e24be638386a8b725f614d42204128a2c0b9d",
+    "scripts/run_caliber_validation_v2.py": "203e91931ffb2eaf19daceee96a3857431a0b70bb833b1ad0afe5ca53c3cb804"
+  },
+  "notes": [
+    "Geometric/synthetic validation only. Experimental method is not connected to real-case analysis.",
+    "Overall metrics are equal-run MAE and sqrt(mean run MSE); both trim variants included as paired, nonindependent runs.",
+    "Per-estimator metrics use its valid samples; matched deltas/wins use common valid sample support and exclude unscorable pairs.",
+    "Valid fraction is sample-weighted over recovered centerlines, including both trim variants. Shared skeleton failures have zero attempted samples and are counted separately as upstream_failed_runs.",
+    "Raw estimators are compared without post-hoc diameter smoothing. Tangents are fitted on the full path before applying production trimming.",
+    "Phase offsets shift grid voxel centers in physical space while analytic vessels stay fixed; fractional shifts apply along all three axes.",
+    "No optional partial-volume experiment; no calibration to truth and no silent EDT fallback for failed sections."
+  ]
+}

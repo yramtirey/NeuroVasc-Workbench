@@ -1,0 +1,249 @@
+{
+  "version": "caliber_v1",
+  "number_of_geometries": 26,
+  "number_of_experiments": 52,
+  "successful_runs": 52,
+  "failed_runs": 0,
+  "overall_mae_mm": 0.20128289197897922,
+  "overall_rmse_mm": 0.25209677787341356,
+  "overall_signed_bias_mm": 0.09329852527027303,
+  "by_trim": {
+    "0.0": {
+      "runs": 26,
+      "mae_mm": 0.20200942790796034,
+      "rmse_mm": 0.25593568725802285,
+      "signed_bias_mm": 0.09057359608073881
+    },
+    "2.0": {
+      "runs": 26,
+      "mae_mm": 0.20055635604999814,
+      "rmse_mm": 0.2481984988191467,
+      "signed_bias_mm": 0.09602345445980724
+    }
+  },
+  "isotropic_mae_mm": 0.19077101494444587,
+  "anisotropic_mae_mm": 0.21179476901351257,
+  "worst_case_geometry": "straight",
+  "worst_case_percent_error": 41.42135623730952,
+  "worst_case_run": {
+    "geometry": "straight",
+    "estimator": "production_edt",
+    "spacing_x_mm": 0.5,
+    "spacing_y_mm": 0.5,
+    "spacing_z_mm": 0.5,
+    "true_diameter_mm": 1,
+    "proximal_diameter_mm": 1,
+    "distal_diameter_mm": 1,
+    "trim_mm": 2.0,
+    "status": "ok",
+    "error": null,
+    "estimated_mean_mm": 1.414213562373095,
+    "estimated_median_mm": 1.4142135623730951,
+    "estimated_min_mm": 1.4142135623730951,
+    "estimated_max_mm": 1.4142135623730951,
+    "mae_mm": 0.41421356237309515,
+    "rmse_mm": 0.41421356237309515,
+    "max_absolute_error_mm": 0.41421356237309515,
+    "absolute_error_mm": 0.41421356237309515,
+    "signed_bias_mm": 0.41421356237309515,
+    "percent_error": 41.42135623730952,
+    "signed_percent_error": 41.42135623730952,
+    "correlation": null,
+    "sample_count": 53,
+    "smooth_mae_mm": 0.4142135623730954,
+    "normalized_position_min": 0.06666666666666665,
+    "normalized_position_max": 0.9333333333333333,
+    "profile_length_mm": 26.0,
+    "run_id": "01_straight_1_1_z0.5_trim2",
+    "geometry_id": "01_straight_1_1_z0.5",
+    "trim_applied": true,
+    "samples_removed": 8,
+    "mae_delta_vs_straight_mm": 0.0
+  },
+  "by_geometry_spacing_trim": [
+    {
+      "geometry": "straight",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 0.0,
+      "runs": 5,
+      "mae_mm": 0.2126036509249157,
+      "rmse_mm": 0.26070335642318343,
+      "signed_bias_mm": 0.18402310866016294
+    },
+    {
+      "geometry": "straight",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 2.0,
+      "runs": 5,
+      "mae_mm": 0.2069368678503419,
+      "rmse_mm": 0.23604866590397947,
+      "signed_bias_mm": 0.2069368678503419
+    },
+    {
+      "geometry": "straight",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 0.0,
+      "runs": 5,
+      "mae_mm": 0.20871254577580442,
+      "rmse_mm": 0.2447285234942894,
+      "signed_bias_mm": 0.20871254577580442
+    },
+    {
+      "geometry": "straight",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 2.0,
+      "runs": 5,
+      "mae_mm": 0.20871254577580442,
+      "rmse_mm": 0.2447285234942894,
+      "signed_bias_mm": 0.20871254577580442
+    },
+    {
+      "geometry": "oblique",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 0.0,
+      "runs": 3,
+      "mae_mm": 0.22526613115761673,
+      "rmse_mm": 0.23884049274718733,
+      "signed_bias_mm": 0.22526613115761673
+    },
+    {
+      "geometry": "oblique",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 2.0,
+      "runs": 3,
+      "mae_mm": 0.22526613115761673,
+      "rmse_mm": 0.23884049274718736,
+      "signed_bias_mm": 0.22526613115761673
+    },
+    {
+      "geometry": "oblique",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 0.0,
+      "runs": 3,
+      "mae_mm": 0.27923528327212854,
+      "rmse_mm": 0.3431223157577967,
+      "signed_bias_mm": -0.18447329475684002
+    },
+    {
+      "geometry": "oblique",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 2.0,
+      "runs": 3,
+      "mae_mm": 0.26418677559643294,
+      "rmse_mm": 0.3232971624841644,
+      "signed_bias_mm": -0.15785548351932463
+    },
+    {
+      "geometry": "curved",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 0.0,
+      "runs": 3,
+      "mae_mm": 0.11300278707494484,
+      "rmse_mm": 0.22583919730784455,
+      "signed_bias_mm": -0.10655163017941116
+    },
+    {
+      "geometry": "curved",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 2.0,
+      "runs": 3,
+      "mae_mm": 0.10790986991528395,
+      "rmse_mm": 0.2162840659537354,
+      "signed_bias_mm": -0.10033348743476876
+    },
+    {
+      "geometry": "curved",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 0.0,
+      "runs": 3,
+      "mae_mm": 0.1717255912885819,
+      "rmse_mm": 0.22084103355485044,
+      "signed_bias_mm": -0.05204327437831405
+    },
+    {
+      "geometry": "curved",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 2.0,
+      "runs": 3,
+      "mae_mm": 0.1906953129314687,
+      "rmse_mm": 0.24134266942786536,
+      "signed_bias_mm": -0.0849708843843754
+    },
+    {
+      "geometry": "tapered",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 0.0,
+      "runs": 2,
+      "mae_mm": 0.21423760387644405,
+      "rmse_mm": 0.26543834376722475,
+      "signed_bias_mm": 0.19757093720977736
+    },
+    {
+      "geometry": "tapered",
+      "spacing_z_mm": 0.5,
+      "trim_mm": 2.0,
+      "runs": 2,
+      "mae_mm": 0.20976691450501478,
+      "rmse_mm": 0.2526861329823282,
+      "signed_bias_mm": 0.20976691450501478
+    },
+    {
+      "geometry": "tapered",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 0.0,
+      "runs": 2,
+      "mae_mm": 0.17474977798533148,
+      "rmse_mm": 0.2227308546851068,
+      "signed_bias_mm": 0.17474977798533148
+    },
+    {
+      "geometry": "tapered",
+      "spacing_z_mm": 0.8,
+      "trim_mm": 2.0,
+      "runs": 2,
+      "mae_mm": 0.1762550456783918,
+      "rmse_mm": 0.21924465173288352,
+      "signed_bias_mm": 0.1762550456783918
+    }
+  ],
+  "runtime": {
+    "python": "3.14.6",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-image": "0.26.0",
+      "networkx": "3.7",
+      "nibabel": "5.4.2",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "source_sha256": {
+    "neurovasc/geometry/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurovasc/geometry/caliber.py": "dfe24d1cd4ed9e46f91e0080600b655176a02c91337bd3275ebb7527ed103772",
+    "neurovasc/geometry/centerline.py": "d9226dc360925607d1f961653a0f620ecebb3827b4ebfde47e9df7403dbb1fbb",
+    "neurovasc/geometry/diameter_profile.py": "bd162690fcc3b9e1e44a9a01bfbe014d7c07abec5c55e62e0cc38d9e8ae4c285",
+    "neurovasc/geometry/main_path.py": "4f02139f9531bf2af2141d4f36264a3c32fcafbc999be9941a9690e962b1ae4b",
+    "neurovasc/geometry/mesh.py": "5342921890b5ad6cb0b16e8893d6898abc864eca57cf26f760f86390c86c028b",
+    "neurovasc/geometry/profile_analysis.py": "dd042ea0804f5fbcc13e0016b4667a9cd348b24773acaa2f7ecf995bcc25ddd3",
+    "neurovasc/graph/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurovasc/graph/branch_graph.py": "e1f6c296deb3a67e4ddb648e045cd8dd4de964dd4ed374d46cc33c48c02c70a2",
+    "neurovasc/graph/metrics.py": "e47970eacf4655096d20b269e7d5e88990ba148309982c020f961c9a4258ad63",
+    "neurovasc/graph/vascular_graph.py": "b84da7f02f485edbb58f706b4c265b6fd8d50ebc3316265642ae0eff27da3124",
+    "neurovasc/io/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurovasc/io/volume.py": "51a1fab9741440eb57e1a11dbc17f556db0a8c2f1d1593f8afd88482ef8c5673",
+    "validation/synthetic_caliber/__init__.py": "bad3559a8495b20858fab0155f529eb9e1cd95cd2d76c8cd209ff51c1128056f",
+    "validation/synthetic_caliber/evaluate.py": "8ab3a36a94f62a2127cd7cedcc1f61d272c5db816c36349b684efeedba6d2224",
+    "validation/synthetic_caliber/geometries.py": "c380a236789822943ee902f246b2bb5dfd6ad2eca24ff9e2676a24cdd34a4f17",
+    "validation/synthetic_caliber/metrics.py": "f5aaef9e41037acc0363322c48614a11f4eac165c6242214a7119d4e6e172d1b",
+    "scripts/run_caliber_validation.py": "4a53f87415596a8e87e471958e0e24be638386a8b725f614d42204128a2c0b9d"
+  },
+  "notes": [
+    "Geometric/synthetic validation of a segmentation-derived estimator; not clinical validation.",
+    "Overall MAE is the equal-run mean of sample MAEs; overall RMSE is sqrt(mean of run MSEs). Both trim settings count equally; runs are paired, not independent replicates.",
+    "percent_error is mean absolute sample-relative error times 100; absolute_error_mm is absolute mean signed error (not MAE).",
+    "Raw production EDT is primary; smoothing is retained for secondary comparison and figures.",
+    "Failures are recorded and excluded from aggregates, never treated as zero error.",
+    "One grid phase and orientation per geometry; no noise, partial volume, or segmentation uncertainty.",
+    "Primary comparison figures use trim=2 mm; all untrimmed and trimmed profiles are saved in profiles.csv."
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "pytest": {
+    "working_tree": {
+      "passed": 234,
+      "skipped": 2,
+      "warnings": 56
+    },
+    "public_checkout": {
+      "passed": 234,
+      "skipped": 2,
+      "warnings": 56
+    }
+  },
+  "frontend": {
+    "build": true,
+    "lint": true
+  },
+  "browser": {
+    "errors": [],
+    "consoleErrors": [],
+    "responses": [
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/1",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/profiles/4",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/1",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/profiles/4",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/3",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/4",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/5",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/6",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/7",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/8",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/9",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/10",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/11",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/geometry/12",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/profiles/10",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/profiles/2",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/profiles/8",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/cases/case_001/profiles/4",
+        "status": 200
+      }
+    ],
+    "selected": "Selected location\n16.73 mm along vessel\n2.80 mm diameter (smoothed)\nRaw 2.46 mm",
+    "clickSelection": "Selected location\n18.80 mm along vessel\n3.48 mm diameter (smoothed)\nRaw 3.75 mm",
+    "selectedVessels": [
+      "Anterior communicating artery\nDiameter along ordered centerline\nMinimum at 4.3 mm\n1.69 mm\nShow minimum caliber",
+      "Right posterior cerebral artery\nDiameter along ordered centerline\nMinimum at 1.8 mm\n1.77 mm\nShow minimum caliber",
+      "Right posterior communicating artery\nDiameter along ordered centerline\nMinimum at 0.0 mm\n0.94 mm\nShow minimum caliber",
+      "Right internal carotid artery\nDiameter along ordered centerline\nMinimum at 16.7 mm\n2.80 mm\nShow minimum caliber"
+    ],
+    "geometryRequestsBeforeSelection": 13,
+    "geometryRequestsAfterSelection": 13,
+    "canvasCount": 1
+  },
+  "portfolio_browser": {
+    "errors": [],
+    "route": "/projects/neurovasc-workbench/",
+    "imgs": [
+      {
+        "src": "/projects/neurovasc/neurovasc-linked-view.png",
+        "loaded": true
+      }
+    ],
+    "docs": {
+      "resume.pdf": 200,
+      "cv.pdf": 200
+    },
+    "mobileHorizontalOverflow": false
+  },
+  "production_hashes": {
+    "neurovasc/geometry/cross_sectional_caliber.py": true,
+    "neurovasc/geometry/centerline_refinement.py": true,
+    "neurovasc/geometry/topology_centerline.py": true,
+    "neurovasc/geometry/hybrid_centerline.py": true,
+    "neurovasc/geometry/main_path.py": true,
+    "neurovasc/geometry/__init__.py": true,
+    "neurovasc/geometry/geodesic_centerline.py": true,
+    "neurovasc/geometry/mesh.py": true,
+    "neurovasc/geometry/caliber.py": true,
+    "neurovasc/geometry/centerline_qc.py": true,
+    "neurovasc/geometry/topology_refinement.py": true,
+    "neurovasc/geometry/diameter_profile.py": true,
+    "neurovasc/geometry/profile_analysis.py": true,
+    "neurovasc/geometry/centerline.py": true,
+    "neurovasc/graph/topology_invariants.py": true,
+    "neurovasc/graph/metrics.py": true,
+    "neurovasc/graph/vascular_graph.py": true,
+    "neurovasc/graph/topology_network.py": true,
+    "neurovasc/graph/__init__.py": true,
+    "neurovasc/graph/topology_qc.py": true,
+    "neurovasc/graph/junction_refinement.py": true,
+    "neurovasc/graph/branch_graph.py": true
+  },
+  "dataset_archive": {
+    "archive": "MRA_IXI_HH.zip",
+    "md5": "bb3339b460b639be4a0a4d6901443284",
+    "official_md5": "bb3339b460b639be4a0a4d6901443284",
+    "match": true
+  },
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0",
+    "nibabel": "5.4.2",
+    "networkx": "3.7",
+    "pyvista": "0.49.0",
+    "vtk": "9.7.1",
+    "pytest": "9.1.1",
+    "fastapi": "0.141.1"
+  },
+  "publication": "blocked; not pushed"
+}

@@ -1,0 +1,39 @@
+# Local environments, packaging and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+build/
+dist/
+.local-release/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Frontend build products
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+# External medical data: never part of the public source release
+*.nii
+*.nii.gz
+*.dcm
+*.zip
+*.tar
+*.tar.gz
+*.7z
+data/raw/*
+data/samples/*
+!data/raw/.gitkeep
+!data/samples/.gitkeep
+# Real-case derivatives and complete generated validation archives stay local
+outputs/
+validation/outputs/
+# Curated validation/public_results and validation source remain tracked
