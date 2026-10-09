@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -13,6 +14,15 @@ CASES_DIR = (
     / "outputs"
     / "cases"
 )
+
+
+def case_path(case_id):
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", case_id):
+        raise HTTPException(status_code=404, detail="Invalid case ID")
+    candidate = CASES_DIR / case_id
+    if candidate.is_symlink():
+        raise HTTPException(status_code=404, detail="Invalid case directory")
+    return candidate
 
 
 app = FastAPI(
@@ -58,7 +68,7 @@ def list_cases():
             / "case_report.json"
         )
 
-        if not report_path.exists():
+        if case_dir.is_symlink() or not report_path.exists():
             continue
 
         with open(report_path) as file:
@@ -86,8 +96,7 @@ def get_case(
 ):
 
     report_path = (
-        CASES_DIR
-        / case_id
+        case_path(case_id)
         / "case_report.json"
     )
 
@@ -111,8 +120,7 @@ def get_vessel_geometry(
 ):
 
     geometry_path = (
-        CASES_DIR
-        / case_id
+        case_path(case_id)
         / "geometry"
         / f"label_{label}.vtp"
     )
@@ -136,7 +144,7 @@ def get_vessel_geometry(
 
 @app.get("/api/cases/{case_id}/profiles/{label}")
 def get_vessel_profile(case_id: str, label: int):
-    profile_path = CASES_DIR / case_id / "profiles" / f"label_{label}.json"
+    profile_path = case_path(case_id) / "profiles" / f"label_{label}.json"
     if not profile_path.is_file():
         raise HTTPException(
             status_code=404,
