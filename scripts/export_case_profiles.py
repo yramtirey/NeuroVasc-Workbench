@@ -21,7 +21,11 @@ def main() -> None:
     args = parser.parse_args()
     case_dir = Path(__file__).resolve().parents[1] / "outputs" / "cases" / args.case_id
     report = json.loads((case_dir / "case_report.json").read_text())
-    volume = load_nifti(args.path)
+    export_profiles(args.path, case_dir, report, args.trim_mm)
+
+
+def export_profiles(path, case_dir, report, trim_mm=2.0):
+    volume = load_nifti(path)
     if volume.path.name != report["source_file"]:
         raise ValueError("Segmentation must match the case report source file")
     profiles_dir = case_dir / "profiles"
@@ -35,7 +39,7 @@ def main() -> None:
             continue
         label_volume = make_label_volume(volume, label)
         graph = build_vascular_graph(extract_centerline(label_volume))
-        profile = build_diameter_profile(label_volume, extract_main_path(graph), trim_mm=args.trim_mm)
+        profile = build_diameter_profile(label_volume, extract_main_path(graph), trim_mm=trim_mm)
         analysis = analyze_profile(profile)
         metrics = {
             "reference_diameter_mm": analysis.reference_diameter_mm,

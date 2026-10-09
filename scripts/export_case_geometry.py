@@ -61,13 +61,17 @@ def main() -> None:
         exist_ok=True,
     )
 
+    export_geometry(volume, output_dir, labels)
+
+
+def export_geometry(volume, output_dir, labels, label_names=None):
     print()
     print("NeuroVasc Geometry Export")
     print("=" * 60)
 
     for label in labels:
 
-        abbreviation = TOPCOW_LABELS.get(
+        abbreviation = (TOPCOW_LABELS if label_names is None else label_names).get(
             label,
             f"label_{label}",
         )

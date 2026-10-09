@@ -48,3 +48,9 @@ export async function getVesselProfile(
 
   return response.json();
 }
+
+export async function getCases(signal?: AbortSignal): Promise<{case_id: string}[]> {
+  const response = await fetch(`${API_BASE}/api/cases`, { signal });
+  if (!response.ok) throw new Error("Unable to list prepared cases");
+  return response.json();
+}

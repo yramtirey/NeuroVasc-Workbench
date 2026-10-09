@@ -37,3 +37,6 @@ data/samples/*
 outputs/
 validation/outputs/
 # Curated validation/public_results and validation source remain tracked
+
+frontend/test-results/
+frontend/playwright-report/

@@ -661,3 +661,6 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+.synthetic-banner { margin: 0; padding: 12px 24px; background: #fff3d7; color: #59471f; }
+.case-summary select { padding: 6px; font: inherit; }

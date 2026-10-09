@@ -8,7 +8,7 @@ import {
   Brain,
 } from "lucide-react";
 
-import { getCase } from "./api";
+import { getCase, getCases } from "./api";
 
 import type {
   CaseReport,
@@ -70,13 +70,30 @@ function App() {
   ] = useState<CaliberSample | null>(
     null,
   );
+  const [cases, setCases] = useState<{case_id: string}[]>([]);
+  const [caseId, setCaseId] = useState<string | null>(new URLSearchParams(window.location.search).get("case"));
   useEffect(() => {
     const controller = new AbortController();
-    getCase("case_001", controller.signal)
+    getCases(controller.signal).then((items) => {
+      if (controller.signal.aborted) return;
+      if (!items.length && !new URLSearchParams(window.location.search).has("case")) {
+        setError("No prepared cases. Run python scripts/prepare_synthetic_demo.py first.");
+        return;
+      }
+      setCases(items);
+      setCaseId((requested) => requested ?? (items.find((item) => item.case_id === "synthetic_demo")?.case_id ?? items[0]?.case_id ?? "case_001"));
+    }).catch((err) => { if (!controller.signal.aborted) setError(String(err)); });
+    return () => controller.abort();
+  }, []);
+  useEffect(() => {
+    if (caseId === null) return;
+    const controller = new AbortController();
+    getCase(caseId, controller.signal)
       .then((data) => {
         if (controller.signal.aborted) return;
         if (!data.vessels.length) throw new Error("Case has no vessel metrics");
         setReport(data);
+        setSelectedPoint(null);
 
         const initial =
           data.vessels.find(
@@ -91,7 +108,7 @@ function App() {
         setError(String(err));
       });
     return () => controller.abort();
-  }, []);
+  }, [caseId]);
 
 
   if (error) {
@@ -104,7 +121,7 @@ function App() {
   }
 
 
-  if (!report || !selected) {
+  if (!report || report.case_id !== caseId || !selected) {
     return (
       <div className="status-screen">
         Loading NeuroVasc Workbench...
@@ -135,9 +152,19 @@ function App() {
         </div>
 
         <div className="case-summary">
-          <span>
-            {report.case_id}
-          </span>
+          <label>
+            Case <select aria-label="Case" value={report.case_id} onChange={(event) => {
+              const next = event.target.value;
+              const url = new URL(window.location.href);
+              url.searchParams.set("case", next);
+              window.history.replaceState(null, "", url);
+              setSelectedPoint(null);
+              setError(null);
+              setCaseId(next);
+            }}>
+              {cases.map((item) => <option key={item.case_id} value={item.case_id}>{item.case_id}</option>)}
+            </select>
+          </label>
 
           <small>
             {report.vessel_count} vessels
@@ -147,6 +174,7 @@ function App() {
       </header>
 
 
+      {report.case_id === "synthetic_demo" && <p className="synthetic-banner" role="note">Synthetic demonstration — stylized generated tubes, not real anatomical imaging. No anatomical or clinical accuracy is claimed.</p>}
       <div className="workspace">
 
         <aside className="sidebar">
@@ -155,7 +183,7 @@ function App() {
             <Activity size={17} />
 
             <span>
-              Anatomy
+              {report.case_id === "synthetic_demo" ? "Synthetic tubes" : "Anatomy"}
             </span>
           </div>
 
@@ -265,7 +293,7 @@ function App() {
 
               <div className="panel-header">
                 <span>
-                  3D Anatomy
+                  {report.case_id === "synthetic_demo" ? "3D stylized tubes" : "3D Anatomy"}
                 </span>
 
                 <small>
@@ -276,6 +304,7 @@ function App() {
               <div className="viewer-container">
 
                 <VesselViewer
+                  key={report.case_id}
                   caseId={report.case_id}
                   selectedLabel={selected.label}
                   labels={report.labels_present}

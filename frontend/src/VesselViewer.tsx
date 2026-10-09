@@ -38,10 +38,10 @@ function styleActor(actor: vtkActor, selected: boolean) {
   property.setOpacity(selected ? 1 : 0.22);
 }
 
-function resetSceneCamera(scene: ViewerScene) {
+function resetSceneCamera(scene: ViewerScene, synthetic = false) {
   const renderer = scene.genericRenderWindow.getRenderer();
   const camera = renderer.getActiveCamera();
-  camera.setPosition(0, 0, 1);
+  camera.setPosition(...(synthetic ? [1, -1, 0.8] as [number, number, number] : [0, 0, 1] as [number, number, number]));
   camera.setFocalPoint(0, 0, 0);
   camera.setViewUp(0, 1, 0);
   renderer.resetCamera();
@@ -85,6 +85,10 @@ function VesselViewer({ caseId, selectedLabel, labels, markerPoint = null }: Ves
     genericRenderWindow.resize();
 
     const renderer = genericRenderWindow.getRenderer();
+    const camera = renderer.getActiveCamera();
+    const cameraSubscription = camera.onModified(() => {
+      container.dataset.camera = JSON.stringify({position: camera.getPosition(), focalPoint: camera.getFocalPoint(), viewUp: camera.getViewUp(), parallelScale: camera.getParallelScale(), viewAngle: camera.getViewAngle()});
+    });
     const renderWindow = genericRenderWindow.getRenderWindow();
     const markerSource = vtkSphereSource.newInstance({
       radius: 0.7, thetaResolution: 24, phiResolution: 24,
@@ -154,7 +158,7 @@ function VesselViewer({ caseId, selectedLabel, labels, markerPoint = null }: Ves
           renderer.addActor(actor);
           setLoadedCount(scene.surfaces.size);
         }
-        if (!controller.signal.aborted) resetSceneCamera(scene);
+        if (!controller.signal.aborted) resetSceneCamera(scene, caseId === "synthetic_demo");
       } catch (error) {
         if (controller.signal.aborted) return;
         setLoadError(error instanceof Error ? error.message : "Unable to load vascular geometry");
@@ -166,6 +170,7 @@ function VesselViewer({ caseId, selectedLabel, labels, markerPoint = null }: Ves
       // Stop asynchronous work and interaction before releasing the OpenGL view.
       controller.abort();
       resizeObserver.disconnect();
+      cameraSubscription.unsubscribe();
       if (vtkRef.current === scene) vtkRef.current = null;
       const interactor = genericRenderWindow.getInteractor();
       const interactorStyle = interactor.getInteractorStyle();
@@ -211,6 +216,8 @@ function VesselViewer({ caseId, selectedLabel, labels, markerPoint = null }: Ves
       source.setRadius(Math.max(0.7, markerPoint.raw_diameter_mm / 2 + 0.75));
     }
     actor.setVisibility(!!valid);
+    const wrapper = containerRef.current?.parentElement;
+    if (wrapper) wrapper.setAttribute("data-marker", actor.getVisibility() ? JSON.stringify(source.getCenter()) : "none");
     scene.genericRenderWindow.getRenderWindow().render();
   }, [markerPoint, caseId, labelsKey]);
 
@@ -218,13 +225,13 @@ function VesselViewer({ caseId, selectedLabel, labels, markerPoint = null }: Ves
   const isLoading = loadedCount < totalCount && !loadError;
 
   return (
-    <div className="vtk-wrapper">
+    <div className="vtk-wrapper" data-marker="none" data-loaded-count={loadedCount}>
       <div ref={containerRef} className="vtk-container" />
       <div className="viewer-toolbar">
         <button
           type="button"
           className="viewer-tool-button"
-          onClick={() => { if (vtkRef.current) resetSceneCamera(vtkRef.current); }}
+          onClick={() => { if (vtkRef.current) resetSceneCamera(vtkRef.current, caseId === "synthetic_demo"); }}
           disabled={isLoading || !!loadError || loadedCount === 0}
         >
           Reset view

@@ -12,7 +12,7 @@ NeuroVasc turns labeled cerebral vascular segmentations into an interactive work
 
 [Project overview on my portfolio](https://yramtirey.github.io/projects/neurovasc-workbench/). The portfolio shows actual captures; the interactive workbench runs locally.
 
-Run the workbench locally with an independently obtained annotated segmentation, using the steps below. There is no hosted live demo. The captures below are from the running application using the attributed TopCoW/IXI example. See [image attribution and license](assets/README.md).
+Run the self-contained synthetic demonstration or use an independently obtained annotated segmentation, using the steps below. There is no hosted live demo. The captures below are from the running application using the attributed TopCoW/IXI example. See [image attribution and license](assets/README.md).
 
 ![NeuroVasc dashboard with named vessels and caliber profile](assets/neurovasc-dashboard.png)
 
@@ -98,7 +98,17 @@ npm run build
 
 ## Running NeuroVasc
 
-First obtain an annotated segmentation from its official source. Keep a working copy at `data/raw/cow_case_001_seg.nii.gz`. The current UI loads `case_001`; on a fresh checkout, prepare its assets from the repository root:
+A fresh checkout needs no imaging download for the synthetic demo. After installing Python 3.14 dependencies and running `npm ci` in `frontend`, prepare it from the repository root:
+
+```bash
+python scripts/prepare_synthetic_demo.py
+```
+
+This creates the ignored `outputs/cases/synthetic_demo` directory with a labeled NIfTI, CSV measurements, report, VTP surfaces and caliber profiles. Twelve stylized generated tubes have curved paths, depth and local radius variation. These are not real anatomical imaging and make no anatomical or clinical accuracy claim. Measurements use the production Lee skeletonization and EDT pipeline; experimental methods remain disabled. `provenance.json` records parameters, spacing, affine, segmentation fingerprint and dependency versions. Generation is staged; an existing case is protected. Use `--force` only to regenerate a demo owned by this generator. Other cases are preserved.
+
+The dashboard defaults to `synthetic_demo` when prepared. Its Case selector retains access to prepared real cases; `http://localhost:5173/?case=case_001` explicitly requests Case 001. A missing requested case is an error and never substitutes synthetic measurements.
+
+For real data, first obtain an annotated segmentation from its official source. Keep a working copy at `data/raw/cow_case_001_seg.nii.gz`, then prepare its assets from the repository root:
 
 ```bash
 source .venv/bin/activate
@@ -123,7 +133,20 @@ cd frontend
 npm run dev -- --host localhost
 ```
 
-Open http://localhost:5173; API docs are at http://127.0.0.1:8000/docs. Select R-ICA or another sidebar vessel, inspect the changing profile, click a sample to locate it in 3D, rotate/zoom, then reset the view. Services are intended for local use, not an authenticated public medical-data deployment.
+Open http://localhost:5173; API docs are at http://127.0.0.1:8000/docs. Select SYN-01 in the demo, R-ICA in Case 001, or another sidebar vessel, inspect the changing profile, click a sample to locate it in 3D, rotate/zoom, then reset the view. Services are intended for local use, not an authenticated public medical-data deployment.
+
+To run integration and browser checks locally:
+
+```bash
+python -m pytest -q
+cd frontend
+npm run build
+npm run lint
+npx playwright install chromium
+npm run test:browser
+```
+
+Browser tests start the local services and exercise the actual synthetic surfaces and profiles. Legacy/empty-case fixtures are explicitly mocked in browser tests; Python tests cover legacy API compatibility. The fresh-checkout GitHub Actions workflow installs Python 3.14 and Node.js 24 and runs these checks. Existing screenshots above remain attributed real-data captures, not synthetic demo screenshots.
 
 ## Repository structure
 
